@@ -4,7 +4,6 @@ import java.util.Locale;
 
 public class Program {
     public static void main(String[] args) {
-        Locale.setDefault(new Locale("pt", "BR"));
 
         System.out.println("Testando a somar");
         boolean teste = OperacaoBasicaTeste.testar_soma();
@@ -20,6 +19,6 @@ public class Program {
 
         System.out.println("Testando a divisao");
         teste = OperacaoBasicaTeste.testar_divisao();
-        System.out.print(teste);
+        System.out.println(teste);
     }
 }

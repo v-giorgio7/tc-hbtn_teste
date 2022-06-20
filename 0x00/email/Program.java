@@ -4,9 +4,8 @@ import java.util.Locale;
 
 public class Program {
     public static void main(String[] args) {
-        Locale.setDefault(new Locale("pt", "BR"));
 
-        System.out.println("Teste de email válido");
+        System.out.println("Teste de email valido");
         boolean isValidEmail = TesteEmail.testar_email_com_arroba();
         System.out.println(isValidEmail);
 
@@ -16,6 +15,6 @@ public class Program {
 
         System.out.println("Teste de email com mais de 50 caracteres");
         isValidEmail = TesteEmail.testar_email_mais_50_caracteres();
-        System.out.print(isValidEmail);
+        System.out.println(isValidEmail);
     }
 }
