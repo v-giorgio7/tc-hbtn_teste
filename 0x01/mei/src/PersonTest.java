@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -16,7 +17,7 @@ public class PersonTest {
     public void setup() {
         String name = "Paul";
         String surname = "McCartney";
-        Date birthDate = new Date(2000);
+        int birthDate = 2000;
         boolean anotherCompanyOwner = true;
         boolean pensioner = true;
         boolean publicServer = true;

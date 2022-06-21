@@ -2,12 +2,14 @@
 
 
 import java.time.LocalDate;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class Person {
     private String name;
     private String surname;
-    private Date birthDate;
+    private int birthDate;
     private boolean anotherCompanyOwner;
     private boolean pensioner;
     private boolean publicServer;
@@ -17,7 +19,7 @@ public class Person {
 
     public Person(String name,
                   String surname,
-                  Date birthDate,
+                  int birthDate,
                   boolean anotherCompanyOwner,
                   boolean pensioner,
                   boolean publicServer) {
@@ -42,10 +44,10 @@ public class Person {
     public void setSurname(String surname) {
         this.surname = surname;
     }
-    public Date getBirthDate() {
+    public int getBirthDate() {
         return birthDate;
     }
-    public void setBirthDate(Date birthDate) {
+    public void setBirthDate(int birthDate) {
         this.birthDate = birthDate;
     }
     public boolean isAnotherCompanyOwner() {
@@ -93,8 +95,9 @@ public class Person {
         return salary < this.MAX_SALARY_VALUE;
     }
 
-    public boolean isOlderThan18(Date birthDate) {
-        return LocalDate.now().getYear() - birthDate.getYear() >= 18;
+    @Deprecated
+    public boolean isOlderThan18(int birthDate) {
+        return LocalDate.now().getYear() - birthDate >= 18;
     }
 
 }
